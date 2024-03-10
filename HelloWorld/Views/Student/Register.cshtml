@@ -1,0 +1,49 @@
+﻿<fieldset>
+    <legend>Register</legend>
+    <form action="/student/register" method="post">
+        <div>
+            <h3 style="color:red">
+                @ViewBag.Error
+            </h3>
+        </div>
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td>
+                    <input type="text" name="FirstName" />
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input type="text" name="LastName"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Major</td>
+                <td>
+                    <select name="Major" >
+                        <option value="">--CHOOSE ONE--</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="it">IT </option>
+                        <option value="Math">Mathematics</option>
+                        <option value="bio">Bilolgy</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea name="Address">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Reigster" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>

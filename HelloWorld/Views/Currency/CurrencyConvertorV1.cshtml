@@ -1,0 +1,44 @@
+﻿<center>
+    <fieldset>
+        <legend> Currency Convertor Version 1.0</legend>
+        <form action="/currency/CurrencyConvertorV1" method="post">
+           <div>
+               <h3 style="color:red">
+                   @ViewBag.Error
+               </h3>
+           </div>
+            <table>            
+                <tr>
+                    <td>Choose Currency</td>
+                    <td>
+                        <select name="fromCurrency">
+                            <option value="x">--CHOOSE ONE--</option>
+                            <option value="sdg">Singapore Dollor</option>
+                            <option value="usd">USD Dollor</option>
+                            <option value="baht">Thai Baht</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Amount</td>
+                    <td>
+                        <input type="number" name="amount" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Result (MMK)</td>
+                    <td>
+                        <input type="number" name="Result" readonly value="@ViewBag.CalculatedAmt" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Convert" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+</center>

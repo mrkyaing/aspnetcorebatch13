@@ -1,0 +1,14 @@
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\bin\Debug\net6.0\OOPPractice.exe
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\bin\Debug\net6.0\OOPPractice.deps.json
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\bin\Debug\net6.0\OOPPractice.runtimeconfig.json
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\bin\Debug\net6.0\OOPPractice.dll
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\bin\Debug\net6.0\OOPPractice.pdb
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\obj\Debug\net6.0\OOPPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\obj\Debug\net6.0\OOPPractice.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\obj\Debug\net6.0\OOPPractice.AssemblyInfo.cs
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\obj\Debug\net6.0\OOPPractice.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\obj\Debug\net6.0\OOPPractice.dll
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\obj\Debug\net6.0\refint\OOPPractice.dll
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\obj\Debug\net6.0\OOPPractice.pdb
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\obj\Debug\net6.0\OOPPractice.genruntimeconfig.cache
+C:\Users\PC\source\repos\aspnetcorebatch13\OOPPractice\obj\Debug\net6.0\ref\OOPPractice.dll

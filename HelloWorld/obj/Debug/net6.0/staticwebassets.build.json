@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "/KjGQg7Kl+4GNBeFfecG3GH8McjPu4re7HiwcOETaok=",
+  "Source": "HelloWorld",
+  "BasePath": "_content/HelloWorld",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "HelloWorld\\wwwroot",
+      "Source": "HelloWorld",
+      "ContentRoot": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\HelloWorld\\wwwroot\\",
+      "BasePath": "_content/HelloWorld",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\HelloWorld\\wwwroot\\downloadfiles\\Database Questions.pdf",
+      "SourceId": "HelloWorld",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\HelloWorld\\wwwroot\\",
+      "BasePath": "_content/HelloWorld",
+      "RelativePath": "downloadfiles/Database Questions.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\downloadfiles\\Database Questions.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\HelloWorld\\wwwroot\\downloadfiles\\SQL Basic for Beginner.pdf",
+      "SourceId": "HelloWorld",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\HelloWorld\\wwwroot\\",
+      "BasePath": "_content/HelloWorld",
+      "RelativePath": "downloadfiles/SQL Basic for Beginner.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\downloadfiles\\SQL Basic for Beginner.pdf"
+    }
+  ]
+}

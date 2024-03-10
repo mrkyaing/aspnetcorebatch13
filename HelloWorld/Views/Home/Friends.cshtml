@@ -1,0 +1,8 @@
+﻿<h1>The following list are my friends</h1>
+<ul>
+    @foreach (string s in ViewBag.Myfriends)
+    {
+        <li>@s</li>
+    }
+</ul>
+<p>@TempData["myFamily"]</p>

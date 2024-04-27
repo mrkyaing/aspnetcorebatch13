@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/KjGQg7Kl+4GNBeFfecG3GH8McjPu4re7HiwcOETaok=",
+  "Hash": "fhmPq2fGj08AGwNsuPxD8inRwv74n+G8Tfq8st7gBD4=",
   "Source": "HelloWorld",
   "BasePath": "_content/HelloWorld",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "HelloWorld\\wwwroot",
       "Source": "HelloWorld",
-      "ContentRoot": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\HelloWorld\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\HelloWorld\\wwwroot\\",
       "BasePath": "_content/HelloWorld",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\HelloWorld\\wwwroot\\downloadfiles\\Database Questions.pdf",
+      "Identity": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\HelloWorld\\wwwroot\\downloadfiles\\Database Questions.pdf",
       "SourceId": "HelloWorld",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\HelloWorld\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\HelloWorld\\wwwroot\\",
       "BasePath": "_content/HelloWorld",
       "RelativePath": "downloadfiles/Database Questions.pdf",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\downloadfiles\\Database Questions.pdf"
     },
     {
-      "Identity": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\HelloWorld\\wwwroot\\downloadfiles\\SQL Basic for Beginner.pdf",
+      "Identity": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\HelloWorld\\wwwroot\\downloadfiles\\SQL Basic for Beginner.pdf",
       "SourceId": "HelloWorld",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\HelloWorld\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\HelloWorld\\wwwroot\\",
       "BasePath": "_content/HelloWorld",
       "RelativePath": "downloadfiles/SQL Basic for Beginner.pdf",
       "AssetKind": "All",

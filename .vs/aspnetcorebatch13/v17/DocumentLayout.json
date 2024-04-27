@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\views\\shared\\_layoutemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\views\\shared\\_layoutemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\cloudhrms.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\cloudhrms.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CloudHRMS\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CloudHRMS\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAPkAAAAAAAAAAAAAAAkBAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T09:31:38.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Program.cs",
-              "RelativeDocumentMoniker": "CloudHRMS\\Program.cs",
-              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Program.cs",
-              "RelativeToolTip": "CloudHRMS\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAB0AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T08:13:53.224Z",
+              "Title": "_LayoutEmployee.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\Shared\\_LayoutEmployee.cshtml",
+              "RelativeDocumentMoniker": "CloudHRMS\\Views\\Shared\\_LayoutEmployee.cshtml",
+              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\Shared\\_LayoutEmployee.cshtml",
+              "RelativeToolTip": "CloudHRMS\\Views\\Shared\\_LayoutEmployee.cshtml",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAAAKgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T09:25:02.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CloudHRMS",
-              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\CloudHRMS.csproj",
-              "RelativeDocumentMoniker": "CloudHRMS\\CloudHRMS.csproj",
-              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\CloudHRMS.csproj",
-              "RelativeToolTip": "CloudHRMS\\CloudHRMS.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-27T08:07:35.198Z",
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "CloudHRMS\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "CloudHRMS\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AQIAAP4BAAAAAAAAAAAAAAwCAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T09:25:00.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "CloudHRMS\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "CloudHRMS\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T08:58:36.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "CloudHRMS\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "CloudHRMS\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T08:58:07.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CloudHRMS\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CloudHRMS\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAgwCAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T08:54:48.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "CloudHRMS\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "CloudHRMS\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA4AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T08:54:47.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "CloudHRMS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "CloudHRMS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-27T08:54:42.889Z",
               "EditorCaption": ""
             }
           ]

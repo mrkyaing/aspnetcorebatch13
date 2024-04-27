@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\OOPPractice\\OOPPractice.csproj": {}
+    "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\OOPPractice\\OOPPractice.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\OOPPractice\\OOPPractice.csproj": {
+    "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\OOPPractice\\OOPPractice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\OOPPractice\\OOPPractice.csproj",
+        "projectUniqueName": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\OOPPractice\\OOPPractice.csproj",
         "projectName": "OOPPractice",
-        "projectPath": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\OOPPractice\\OOPPractice.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\OOPPractice\\obj\\",
+        "projectPath": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\OOPPractice\\OOPPractice.csproj",
+        "packagesPath": "C:\\Users\\Saw Yu Nandar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\OOPPractice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Saw Yu Nandar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,12 +55,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

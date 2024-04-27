@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "AAggRg7SansoZgJ0RpLIvRIBco4PjUcYrreP1BL/nKJCh4GHo+lGMd6MLmS4FI1zca40ud+gHU7icX84UXEYtQ==",
+  "dgSpecHash": "ao7m+Rwc4QOc1sQKguZhgOU9GaVVXEibBCncnrRB4WwG7YWehqGc9qAd37iebxnBCWevNnSDHEQ0fx+k/hbgsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\HelloWorld\\HelloWorld.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\HelloWorld\\HelloWorld.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Saw Yu Nandar\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Saw Yu Nandar\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Saw Yu Nandar\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Saw Yu Nandar\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
   "logs": []
 }

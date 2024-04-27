@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "v1VhFGblzIYMGBLO+/0UuzfczlHDnt9L0y73pxztW+qcKINIZFUg4cAT2fb+D1JgZIfKuTJWdlWTIGQa1Bi6pg==",
+  "dgSpecHash": "DXVYGz8SQ3ZndVeUXNdjDbcvwFY6WanH667rUhktYvqNvEunP4YNfa/SX+tQwDYONIlLH5NPvBmvigjgzflw3A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\source\\repos\\aspnetcorebatch13\\OOPPractice\\OOPPractice.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\OOPPractice\\OOPPractice.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Saw Yu Nandar\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Saw Yu Nandar\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Saw Yu Nandar\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Saw Yu Nandar\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
   "logs": []
 }

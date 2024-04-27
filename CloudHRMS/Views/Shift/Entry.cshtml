@@ -1,0 +1,45 @@
+﻿<div>
+    <h1>Entry Shift</h1>
+    @if (ViewBag.info != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.info
+        </div>
+    }
+    <form action="/shift/Entry" method="post" >
+<div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" name="Name" class="form-control" placeholder="Enter Shift Name..." required>
+        </div>
+        <div class="mb-3">
+            <label for="AttendancePolicyId" class="form-label">Attendance Policy</label>
+            <select name="AttendancePolicyId" class="form-select">
+                <option value="x" selected>--select attendance policy--</option>
+                @foreach (var attpolicy in ViewBag.AttedancePolicies)
+                {
+                    <option value="@attpolicy.Id">@attpolicy.Name</option>
+                }
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="InTime" class="form-label">In Time</label>
+            <input type="time" name="InTime" class="form-control"  required>
+        </div>
+        <div class="mb-3">
+            <label for="OutTime" class="form-label">Out Time</label>
+            <input type="time" name="OutTime" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="LateAfter" class="form-label">Late After</label>
+            <input type="time" name="LateAfter" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="EarlyOutBefore" class="form-label">EarlyOut Before</label>
+            <input type="time" name="EarlyOutBefore" class="form-control">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Entry</button>
+            <button class="btn btn-danger">Cancel</button>
+        </div>
+    </form>
+</div>

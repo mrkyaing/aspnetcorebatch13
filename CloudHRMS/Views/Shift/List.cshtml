@@ -1,0 +1,57 @@
+﻿@model List<ShiftViewModel>
+<h1>Shift Information</h1>
+@if (TempData["info"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["info"]
+    </div>
+}
+<table class="table table-hover" id="ShiftTable">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <td scope="col">Name</td>
+            <td>InTime</td>
+            <td scope="col">OutTime</td>
+            <td scope="col">LateAfter</td>
+            <td scope="col">EarlyOutBefore</td>
+            <td scope="col">AttendancePolicyId</td>
+            @if (User.IsInRole("HR"))
+            {
+                <th scope="col">Actions</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int index = 1;
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@index</th>
+                <td>@item.Name</td>
+                <td>@item.InTime</td>
+                <td>@item.OutTime</td>
+                <td>@item.LateAfter</td>
+                <td>@item.EarlyOutBefore</td>
+                <td>@item.AttendancePolicyId</td>
+                @if (User.IsInRole("HR"))
+                {
+                    <td>
+                        <div class="btn btn-group">
+                            <a href="/employee/Edit?id=@item.Id" class="btn btn-primary" role="button">Edit</a>
+                            <a asp-action="Delete" asp-controller="Employee" asp-route-id="@item.Id" onclick="return confirm('are you sure to delete this record?');" class="btn btn-danger" role="button"> Delete</a>
+                        </div>
+                    </td>
+                }
+            </tr>
+            index++;
+        }
+    </tbody>
+</table>
+<script>
+    $(document).ready(function () {
+        $('#ShiftTable').DataTable();
+    });
+</script>

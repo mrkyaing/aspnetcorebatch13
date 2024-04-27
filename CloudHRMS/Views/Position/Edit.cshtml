@@ -1,0 +1,31 @@
+﻿@model PositionViewModel
+<div>
+    <h1>Edit Position</h1>
+    @if (ViewBag.Info != null)
+    {
+        <div class="alert alert-info">
+            @ViewBag.Info
+        </div>
+    }
+    <form action="/position/Update" method="post">
+        <input type="hidden" name="Id" value="@Model.Id"/>
+        <input type="hidden" name="CreatedAt" value="@Model.CreatedAt" />
+        <div class="mb-3">
+            <label for="Code" class="form-label">Code</label>
+            <input type="text" name="Code" class="form-control" value="@Model.Code" required>
+        </div>
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" name="Name" class="form-control" value="@Model.Name" required>
+        </div>
+        <div class="mb-3">
+            <label for="Level" class="form-label">Level</label>
+            <input type="text" name="Level" class="form-control" value="@Model.Level" required>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Update</button>
+            <button class="btn btn-danger">Cancel</button>
+        </div>
+    </form>
+
+</div>

@@ -1,0 +1,105 @@
+﻿@model EmployeeViewModel
+<div>
+    <h1>Edit Employee</h1>
+    @if (ViewBag.info != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.info
+        </div>
+    }
+    <form action="/employee/update" method="post">
+        <div class="mb-3">
+            <input type="hidden" name="Id" value="@Model.Id"/>
+            <label for="Code" class="form-label">Code</label>
+            <input type="text" name="Code" class="form-control"  value="@Model.Code" required>
+        </div>
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" name="Name" class="form-control" value="@Model.Name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="Email" class="form-control" value="@Model.Email">
+        </div>
+        <div class="mb-3">
+            <label for="DOB" class="form-label">Date Of Birth</label>
+            <input type="date" name="DOB" class="form-control" value="@Model.DOB.ToString("yyyy-MM-dd")">
+        </div>
+        <div class="mb-3">
+            <label for="DOE" class="form-label">Date Of Employment</label>
+            <input type="date" name="DOE" class="form-control" value="@Model.DOE.ToString("yyyy-MM-dd")">
+        </div>
+        <div class="mb-3">
+            <label for="Department" class="form-label">Department</label>
+            <select name="DepartmentId" class="form-select">
+                @foreach (var department in ViewBag.Departments)
+                {
+                    if (@department.Id == Model.DepartmentId)
+                    {
+                        <option value="@department.Id" selected>@department.Code</option>
+                    }
+                    else
+                    {
+                        <option value="@department.Id">@department.Code</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="Position" class="form-label">Position</label>
+            <select name="PositionId" class="form-select">
+                @foreach (var position in ViewBag.Positions)
+                {
+                    if (@position.Id == Model.PositionId)
+                    {
+                        <option value="@position.Id" selected>@position.Code</option>
+                    }
+                    else
+                    {
+                        <option value="@position.Id">@position.Code</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="BasicSalary" class="form-label">Basic Salary</label>
+            <input type="text" name="BasicSalary" class="form-control" value="@Model.BasicSalary">
+        </div>
+
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender" value="m"  @(Model.Gender=="m"?"Checked":"")>
+                <label class="form-check-label" for="Male">
+                    Male
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender" value="f" @(Model.Gender == "f" ? "Checked" : "")>
+                <label class="form-check-label" for="Female">
+                    Female
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender" value="o">
+                <label class="form-check-label" for="Female" @(Model.Gender == "o" ? "Checked" : "")>
+                    Other
+                </label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="Phone" class="form-label">Phone</label>
+            <input type="text" name="Phone" class="form-control" value="@Model.Phone">
+        </div>
+        <div class="mb-3">
+            <label for="adress" class="form-label">Address</label>
+            <textarea class="form-control" rows="3" name="Address">@Model.Address</textarea>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Update</button>
+            <button class="btn btn-danger" type="reset">Cancel</button>
+        </div>
+    </form>
+</div>
+

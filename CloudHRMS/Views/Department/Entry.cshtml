@@ -1,0 +1,27 @@
+﻿<div>
+    <h1>Entry Department</h1>
+    @if (ViewBag.Info != null)
+    {
+        <div class="alert alert-info">
+            @ViewBag.Info
+        </div>
+    }
+    <form action="/Department/Entry" method="post">
+        <div class="mb-3">
+            <label for="Code" class="form-label">Code</label>
+            <input type="text" name="Code" class="form-control" placeholder="Enter Organization Code..." required>
+        </div>
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" name="Name" class="form-control" placeholder="Enter Organization Name..." required>
+        </div>
+        <div class="mb-3">
+            <label for="Phone" class="form-label">Extenstion Phone:(+959256275319)</label>
+            <input type="tel" name="ExtensionPhone" class="form-control" placeholder="Enter Extension Phone..." required>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Entry</button>
+            <button class="btn btn-danger">Cancel</button>
+        </div>
+    </form>
+</div>

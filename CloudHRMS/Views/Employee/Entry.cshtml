@@ -1,0 +1,113 @@
+﻿<div>
+    <h1>Entry Employee</h1>
+    @if (ViewBag.info != null)
+    {
+        <div class="alert alert-danger">
+            @ViewBag.info
+        </div>
+    }
+    <form action="/employee/Entry" method="post" enctype="multipart/form-data" >
+<div class="mb-3">
+    <label for="Name" class="form-label">ProfileImage</label>
+            <input type="file" name="ProfileImage" class="form-control" id="customFile" accept='image/*' onchange="readURL(this)">
+            <img src="" alt="No Image" id="img" class="rounded-circle" height="40" width="40">
+</div>
+<div class="mb-3">
+            <label for="Code" class="form-label">Code</label>
+            <input type="text" name="Code" class="form-control" placeholder="Enter Employee Code..." required>
+        </div>
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" name="Name" class="form-control" placeholder="Enter Employee Name..." required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="Email" class="form-control" placeholder="Enter email eg .name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="DOB" class="form-label">Date Of Birth</label>
+            <input type="date" name="DOB" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="DOE" class="form-label">Date Of Employment</label>
+            <input type="date" name="DOE" class="form-control">
+        </div>
+       
+        <div class="mb-3">
+            <label for="Department" class="form-label">Department</label>
+        <select name="DepartmentId" class="form-select" >
+                <option value="x" selected>--select department--</option>
+                @foreach (var department in ViewBag.Departments)
+                {
+                    <option value="@department.Id">@department.Code</option>
+                }
+        </select>
+        </div>
+        
+        <div class="mb-3">
+            <label for="Position" class="form-label">Position</label>
+            <select name="PositionId" class="form-select">
+                <option value="x" selected>--select position--</option>
+                @foreach (var position in ViewBag.Positions)
+                {
+                    <option value="@position.Id">@position.Code</option>
+                }
+            </select>
+        </div>
+        
+        <div class="mb-3">
+            <label for="BasicSalary" class="form-label">Basic Salary</label>
+            <input type="text" name="BasicSalary" class="form-control" placeholder="Enter Basic Salary ... ">
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender" value="m">
+                <label class="form-check-label" for="Male">
+                    Male
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender" value="f">
+                <label class="form-check-label" for="Female">
+                    Female
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender" value="o">
+                <label class="form-check-label" for="Female">
+                    Other
+                </label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="Phone" class="form-label">Phone</label>
+            <input type="text" name="Phone" class="form-control" placeholder="Enter Phone ... ">
+        </div>
+        <div class="mb-3">
+            <label for="adress" class="form-label">Address</label>
+            <textarea class="form-control" rows="3" name="Address"></textarea>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Entry</button>
+            <button class="btn btn-danger" type="reset">Cancel</button>
+        </div>
+    </form>
+</div>
+@section scripts {
+    <script type="text/javascript">
+        // Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    document.querySelector("#img").setAttribute("src", e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+}

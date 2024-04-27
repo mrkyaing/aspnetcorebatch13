@@ -1,0 +1,36 @@
+﻿<div>
+    <h1>Entry Attendance Policy</h1>
+    @if (ViewBag.Info != null)
+    {
+        <div class="alert alert-info">
+            @ViewBag.Info
+        </div>
+    }
+    <form action="/attendancePolicy/Entry" method="post">
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" name="Name" class="form-control" placeholder="Enter attendancre Policy name..." required>
+        </div>
+        <div class="mb-3">
+            <label for="NumberOfLateTime" class="form-label">Number Of Late Time</label>
+            <input type="number" name="NumberOfLateTime" class="form-control" placeholder="Enter Number Of LateTime..." required>
+        </div>
+        <div class="mb-3">
+            <label for="NumberOfEarlyOutTime" class="form-label">Number Of EarlyOut Time</label>
+            <input type="number" name="NumberOfEarlyOutTime" class="form-control" placeholder="Enter Number Of EarlyOut Time..." required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="DeductionInAmount" class="form-label">Deduction In Amount(MMK)</label>
+            <input type="number" name="DeductionInAmount" class="form-control" placeholder="Enter Deduction In Amount..." required>
+        </div>
+        <div class="mb-3">
+            <label for="DeductionInDay" class="form-label">Deduction In Day </label>
+            <input type="number" name="DeductionInDay" class="form-control" placeholder="Enter Deduction In Day..." required>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Entry</button>
+            <button class="btn btn-danger">Cancel</button>
+        </div>
+    </form>
+</div>

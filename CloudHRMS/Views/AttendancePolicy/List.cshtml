@@ -1,0 +1,56 @@
+﻿@model IList<AttendancePolicyViewModel>
+@if (TempData["info"] != null)
+{
+    <div class="alert alert-info">
+        <h3>@TempData["info"]</h3>
+    </div>
+}
+<h1>Attendance Policy Information</h1>
+<Table class="table table-dark table-striped" id="AttendancePolicyTable">
+    <Thead>
+        <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Name</th>
+            <th scope="col">NumberOfLateTime</th>
+            <th scope="col">NumberOfEarlyOutTime</th>
+             <th scope="col">DeductionInAmount</th>
+            <th scope="col">DeductionInDay</th>
+            @if(User.IsInRole("HR")){
+                <th scope="col">Actions</th>
+            }
+        </tr>
+    </Thead>
+    @{
+        int index = 1;
+    }
+    <Tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td scope="col">@index</td>
+                <td scope="col">@item.Name</td>
+                <td scope="col">@item.NumberOfLateTime</td>
+                 <td scope="col">@item.NumberOfEarlyOutTime</td>
+                <td scope="col">@item.DeductionInAmount</td>
+                    <td scope="col">@item.DeductionInDay</td>
+                @if (User.IsInRole("HR"))
+                {
+                    <td>
+                        <div class="btn-group">
+                        <a class="btn btn-danger" asp-area="" asp-controller="Position" asp-action="Delete"
+                           aria-current="page" asp-route-id="@item.Id">Delete</a>
+                        <a class="btn btn-primary" asp-controller="Position" asp-action="Edit"
+                           asp-route-id="@item.Id">Edit</a>
+                    </div>
+                </td>
+                }
+            </tr>
+            index++;
+        }
+    </Tbody>
+</Table>
+<script>
+    $(document).ready(function () {
+        $('#AttendancePolicyTable').DataTable();
+    });
+</script>

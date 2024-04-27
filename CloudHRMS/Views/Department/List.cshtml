@@ -1,0 +1,54 @@
+﻿@model IList<DepartmentViewModel>;
+@if (TempData["info"] != null)
+{
+    <div class="alert alert-info">
+        <h3>@TempData["info"]</h3>
+    </div>
+}
+<h1>Department Information</h1>
+<Table class="table table-dark table-striped" id="DepartmentTable">
+    <Thead>
+        <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Code</th>
+            <th scope="col">Name</th>
+            <th scope="col">Extension Phone</th>
+            <th scope="col">Total Employee Count(s)</th>
+            @if (User.IsInRole("HR"))
+            {
+                <td scope="col">Actions</td>
+            }
+        </tr>
+    </Thead>
+    @{
+        int index = 1;
+    }
+    <Tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td scope="col">@index</td>
+                <td scope="col">@item.Code</td>
+                <td scope="col">@item.Name</td>
+                <td scope="col">@item.ExtensionPhone</td>
+                <td scope="col">@item.TotalEmployeeCount</td>
+                   @if(User.IsInRole("HR")){
+                <td>
+                    <div class="btn-group">
+                        <a class="btn btn-danger" asp-area="" asp-controller="Department" asp-action="Delete"
+                           aria-current="page" asp-route-id="@item.Id">Delete</a>
+                        <a class="btn btn-primary" asp-controller="Department" asp-action="Edit"
+                           asp-route-id="@item.Id aria-current=" page">Edit</a>
+                    </div>                  
+                </td>
+                }
+            </tr>
+            index++;
+        }
+    </Tbody>
+</Table>
+<script>
+    $(document).ready(function () {
+        $('#DepartmentTable').DataTable();
+    });
+</script>

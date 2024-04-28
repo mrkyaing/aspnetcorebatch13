@@ -1,5 +1,5 @@
 ﻿@model List<AttendanceMasterViewModel>
-<h1>Shift Assign Information</h1>
+<h1>Attendance Master  Information(after dayend Process)</h1>
 @if (TempData["info"] != null)
 {
     <div class="alert alert-info">
@@ -13,9 +13,9 @@
             <td scope="col">AttendanceDate</td>
             <td scope="col">InTime</td>
             <td scope="col">OutTime</td>
-            <td scope="col">EmployeeId</td>
-            <td scope="col">DepartmentId</td>
-            <td scope="col">ShiftId</td>
+            <td scope="col">Employee</td>
+            <td scope="col">Department</td>
+            <td scope="col">Shift</td>
             <td scope="col">IsLate</td>
             <td scope="col">IsEarlyOut</td>
             <td scope="col">IsLeave</td>
@@ -36,9 +36,9 @@
                 <td>@item.AttendanceDate</td>
                 <td>@item.InTime</td>
                 <td>@item.OutTime</td>
-                <td>@item.EmployeeId</td>
-                <td>@item.DepartmentId</td>
-                <td>@item.ShiftId</td>           
+                <td>@item.EmployeeInfo</td>
+                <td>@item.DepartmentInfo</td>
+                <td>@item.ShiftInfo</td>           
                 <td>@item.IsLate</td>
                 <td>@item.IsEarlyOut</td>
                 <td>@item.IsLeave</td>

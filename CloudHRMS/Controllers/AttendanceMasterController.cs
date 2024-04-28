@@ -19,7 +19,27 @@ namespace CloudHRMS.Controllers
         public IActionResult List()
         {
             //mapper.map<source,destination>(dataList);
-            return View(_mapper.Map<List<AttendanceMasterEntity>,List<AttendanceMasterViewModel>>(_applicationDbContext.AttendanceMasters.ToList()));
+            //_mapper.Map<List<AttendanceMasterEntity>,List<AttendanceMasterViewModel>>(_applicationDbContext.AttendanceMasters.ToList())
+            List<AttendanceMasterViewModel> attendanceMasters = (from attm in _applicationDbContext.AttendanceMasters
+                                                                 join e in _applicationDbContext.Employees
+                                                                 on attm.EmployeeId equals e.Id
+                                                                 join d in _applicationDbContext.Departments
+                                                                 on e.DepartmentId equals d.Id
+                                                                 join sa in _applicationDbContext.ShiftAssigns
+                                                                 on e.Id equals sa.EmployeeId
+                                                                 join s in _applicationDbContext.Shifts
+                                                                 on sa.ShiftId equals s.Id
+                                                                 select new AttendanceMasterViewModel
+                                                                 {
+                                                                     Id=attm.Id,
+                                                                     AttendanceDate=attm.AttendanceDate,
+                                                                    InTime=attm.InTime,
+                                                                    OutTime=attm.OutTime,
+                                                                    ShiftInfo=s.Name,
+                                                                    EmployeeInfo=e.Code+"/"+e.Name,
+                                                                    DepartmentInfo=d.Code+"/"+d.Name,
+                                                                 }).ToList();
+            return View(attendanceMasters);
         }
         public IActionResult DayEndProcess()
         {

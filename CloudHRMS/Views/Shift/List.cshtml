@@ -15,7 +15,7 @@
             <td scope="col">OutTime</td>
             <td scope="col">LateAfter</td>
             <td scope="col">EarlyOutBefore</td>
-            <td scope="col">AttendancePolicyId</td>
+            <td scope="col">Attendance Policy</td>
             @if (User.IsInRole("HR"))
             {
                 <th scope="col">Actions</th>
@@ -35,7 +35,7 @@
                 <td>@item.OutTime</td>
                 <td>@item.LateAfter</td>
                 <td>@item.EarlyOutBefore</td>
-                <td>@item.AttendancePolicyId</td>
+                <td>@item.ShiftInfo</td>
                 @if (User.IsInRole("HR"))
                 {
                     <td>

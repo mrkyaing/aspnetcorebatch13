@@ -36,15 +36,15 @@ namespace CloudHRMS.Controllers
                 //Data exchange from view model to data model by using automapper 
                 List<AttendanceMasterEntity> attendanceMasters = new List<AttendanceMasterEntity>();         
                 var DailyAttendancesWithShiftAssignsData = (from d in _applicationDbContext.DailyAttendances
-                            join sa in _applicationDbContext.ShiftAssigns
-                            on d.EmployeeId equals sa.EmployeeId
-                            where sa.EmployeeId == ui.EmployeeId &&
-                                        (ui.AttendanceDate >= sa.FromDate && sa.FromDate <= ui.ToDate)
-                            select new
-                            {
-                                dailyAttendance=d,
-                                shiftAssign=sa
-                            }).ToList();             
+                                                                                                    join sa in _applicationDbContext.ShiftAssigns
+                                                                                                    on d.EmployeeId equals sa.EmployeeId
+                                                                                                    where sa.EmployeeId == ui.EmployeeId &&
+                                                                                                                (ui.AttendanceDate >= sa.FromDate && sa.FromDate <= ui.ToDate)
+                                                                                                    select new
+                                                                                                    {
+                                                                                                        dailyAttendance=d,
+                                                                                                        shiftAssign=sa
+                                                                                                    }).ToList();             
                 foreach(var data in DailyAttendancesWithShiftAssignsData)
                 {
                     ShiftEntity definedShift = _applicationDbContext.Shifts.Where(s => s.Id == data.shiftAssign.ShiftId).SingleOrDefault() ;
@@ -61,7 +61,7 @@ namespace CloudHRMS.Controllers
                         attendanceMaster.DepartmentId = data.dailyAttendance.DepartmentId;
                         attendanceMaster.AttendanceDate = data.dailyAttendance.AttendanceDate;
                         //checking out the late status 
-                        if (data.dailyAttendance.InTime> definedShift.LateAfter)
+                        if (data.dailyAttendance.InTime> definedShift.LateAfter) //9:16 , 9:15 
                         {
                             attendanceMaster.IsLate = true;
                         }
@@ -70,7 +70,7 @@ namespace CloudHRMS.Controllers
                             attendanceMaster.IsLate = false;
                         }
                         //checking out the late status 
-                        if (data.dailyAttendance.OutTime < definedShift.EarlyOutBefore)
+                        if (data.dailyAttendance.OutTime < definedShift.EarlyOutBefore)//18:30 , 17:45
                         {
                             attendanceMaster.IsEarlyOut = true;
                         }
@@ -78,12 +78,12 @@ namespace CloudHRMS.Controllers
                         {
                             attendanceMaster.IsEarlyOut = false;
                         }
-                        attendanceMasters.Add(attendanceMaster);
+                        attendanceMasters.Add(attendanceMaster);//adding the recrod to the List object  
                     }//end of the deifned shift not null 
                 
                 }
-                _applicationDbContext.AttendanceMasters.AddRange(attendanceMasters);
-                _applicationDbContext.SaveChanges();
+                _applicationDbContext.AttendanceMasters.AddRange(attendanceMasters);//save the recrod to the Db Set <attendance Master> 
+                _applicationDbContext.SaveChanges();//saving the data to the database 
                 ViewBag.Info = "successfully save a record to the system";
             }
             catch (Exception ex)

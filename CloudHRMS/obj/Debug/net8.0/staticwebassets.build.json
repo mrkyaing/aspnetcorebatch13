@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4xaE529jLUqFdh9f1NuOQCDrLhdpIl0Bxx1AyGMtTUk=",
+  "Hash": "ZuPJ8Ew07bBGUwOQ6RiyqbAyYyvyTw4LNGKiK4DhldM=",
   "Source": "CloudHRMS",
   "BasePath": "_content/CloudHRMS",
   "Mode": "Default",
@@ -2922,6 +2922,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\a604ec02-987a-4fb0-96f8-dac0f6e1b928_public.png"
+    },
+    {
+      "Identity": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\wwwroot\\images\\b45b30f7-9ce7-4835-b2b3-f8def45e1db5_Scan  !a.jpg",
+      "SourceId": "CloudHRMS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\wwwroot\\",
+      "BasePath": "_content/CloudHRMS",
+      "RelativePath": "images/b45b30f7-9ce7-4835-b2b3-f8def45e1db5_Scan  !a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b45b30f7-9ce7-4835-b2b3-f8def45e1db5_Scan  !a.jpg"
     },
     {
       "Identity": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\wwwroot\\images\\e8a13cc2-3dd2-40ab-8507-de2928ffe427_mk.jpeg",

@@ -132,9 +132,7 @@ namespace CloudHRMS.Controllers
             return RedirectToAction("List");
         }
        public IActionResult Edit(string id)
-        {
-                
-            
+        {                   
             EmployeeViewModel employee = _applicationDbContext.Employees.Where(x => x.Id == id).Select(s =>
             new EmployeeViewModel
             {

@@ -19,7 +19,21 @@ namespace CloudHRMS.Controllers
         public IActionResult List()
         {
             //mapper.map<source,destination>(dataList);
-            return View(_mapper.Map<List<ShiftEntity>,List<ShiftViewModel>>(_applicationDbContext.Shifts.ToList()));
+            //_mapper.Map<List<ShiftEntity>,List<ShiftViewModel>>(_applicationDbContext.Shifts.ToList())
+            List<ShiftViewModel> shifts=(from s in _applicationDbContext.Shifts
+                                                                 join a in _applicationDbContext.AttendancePolicyEntity
+                                                                on s.AttendancePolicyId equals a.Id select new ShiftViewModel
+                                                                {
+                                                                    Id= s.Id,
+                                                                    Name=s.Name,
+                                                                    InTime=s.InTime,
+                                                                    OutTime=s.OutTime,
+                                                                    LateAfter=s.LateAfter,
+                                                                    EarlyOutBefore=s.EarlyOutBefore,
+                                                                    AttendancePolicyId=s.AttendancePolicyId,
+                                                                    ShiftInfo=s.Name
+                                                                }).ToList();
+            return View(shifts);
         }
         public IActionResult Entry()
         {

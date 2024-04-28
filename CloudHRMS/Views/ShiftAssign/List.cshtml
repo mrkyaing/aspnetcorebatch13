@@ -10,8 +10,8 @@
     <thead>
         <tr>
             <th scope="col">#</th>
-            <td>EmployeeId</td>
-            <td>ShiftId</td>
+            <td>Employee</td>
+            <td>Shift info </td>
             <td>FromDate</td>
             <td>ToDate</td>
             @if (User.IsInRole("HR"))
@@ -28,8 +28,8 @@
         {
             <tr>
                 <th scope="row">@index</th>
-                <td>@item.EmployeeId</td>
-                <td>@item.ShiftId</td>
+                <td>@item.EmployeeInfo</td>
+                <td>@item.ShiftInfo</td>
                 <td>@item.FromDate</td>
                 <td>@item.ToDate</td>
                 @if (User.IsInRole("HR"))

@@ -29,8 +29,8 @@ namespace CloudHRMS.Services
                 }
                 try
                 {
-                    //string userId=await _userService.CreateAsync(ui.Email);
-                    string userId = "1b367d50-5571-4a51-bc23-a60b10dd3916";
+                    string userId=await _userService.CreateAsync(ui.Email);
+                    //string userId = "1b367d50-5571-4a51-bc23-a60b10dd3916";
                     //Data exchange from view model to data model
                     var employee = new EmployeeEntity()
                     {

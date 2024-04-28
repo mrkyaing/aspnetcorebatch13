@@ -9,5 +9,6 @@
         public TimeSpan LateAfter { get; set; }
         public TimeSpan EarlyOutBefore { get; set; }
         public string AttendancePolicyId { get; set; }
+        public string ShiftInfo { get; set; }
     }
 }

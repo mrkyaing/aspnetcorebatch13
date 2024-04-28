@@ -7,5 +7,7 @@
         public string ShiftId { get; set; }
         public DateTime FromDate { get; set; }
         public DateTime ToDate { get; set; }
+        public string EmployeeInfo { get; set; }
+        public string ShiftInfo { get; set; }
     }
 }

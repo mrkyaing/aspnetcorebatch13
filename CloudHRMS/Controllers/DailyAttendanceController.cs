@@ -78,7 +78,7 @@ namespace CloudHRMS.Controllers
             var employees = _applicationDbContext.Employees.Select(s => new EmployeeViewModel
             {
                 Id = s.Id,
-                Code = s.Code
+                Code = s.Code + "/" +s.Name
             }).OrderBy(o => o.Code).ToList();
             ViewBag.Employees = employees;
             return View();

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CloudHRMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22949840192433aebab128bd1a914d37e191c6f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+354bb0cd5d920184c02cc3845fe7c1a0bf94c088")]
 [assembly: System.Reflection.AssemblyProductAttribute("CloudHRMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CloudHRMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

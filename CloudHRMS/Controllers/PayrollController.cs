@@ -28,16 +28,32 @@ namespace CloudHRMS.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult PayrollProcess(PayrollViewModel ui)
+        public IActionResult PayrollProcess(PayrollProcessViewModel ui)
         {
             try
             {
-                //Data exchange from view model to data model by using automapper 
-                { 
-                  
-                }
+                   List<AttendanceMasterCalculatedData> attendanceMasterCalculatedData = new List<AttendanceMasterCalculatedData>() ;
+                    if (ui.DepartmentId != null)
+                    {
+                    //HR,01-03-2024 to 31-03-2024 
+                    List<AttendanceMasterEntity> attendances = _applicationDbContext.AttendanceMasters.Where(w=>w.DepartmentId==ui.DepartmentId &&
+                                                                                                                                        (w.AttendanceDate<=ui.ToDate))
+                                                                                                                                        .ToList();
+
+                    foreach(AttendanceMasterEntity  attendanceMaster in attendances)
+                    {
+                        AttendanceMasterCalculatedData calculatedData = new AttendanceMasterCalculatedData();
+                        calculatedData.DepartmentId = attendanceMaster.DepartmentId;
+                        calculatedData.EmployeeId=attendanceMaster.EmployeeId;
+                        calculatedData.AttendanceDate=attendanceMaster.AttendanceDate;
+                        calculatedData.LateCount= attendances.Where(w=>w.EmployeeId==attendanceMaster.EmployeeId && w.IsLate==true).Count();
+                        calculatedData.EarlyOutCount= attendances.Where(w => w.EmployeeId == attendanceMaster.EmployeeId && w.IsEarlyOut == true).Count();
+                        calculatedData.LateCount = attendances.Where(w => w.EmployeeId == attendanceMaster.EmployeeId && w.IsLate == true).Count();
+                        attendanceMasterCalculatedData.Add(calculatedData);
+                    }
+                    }
               //  _applicationDbContext.AttendanceMasters.AddRange(attendanceMasters);
-                _applicationDbContext.SaveChanges();
+              //  _applicationDbContext.SaveChanges();
                 ViewBag.Info = "successfully save a record to the system";
             }
             catch (Exception ex)

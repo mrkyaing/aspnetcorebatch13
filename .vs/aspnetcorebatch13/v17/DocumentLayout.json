@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\controllers\\payrollcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\controllers\\payrollcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\models\\datamodels\\attendancemastercalculateddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\models\\datamodels\\attendancemastercalculateddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\models\\viewmodels\\payrollprocessviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\models\\viewmodels\\payrollprocessviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|c:\\users\\saw yu nandar\\documents\\ai\\aspnetcorebatch13\\cloudhrms\\controllers\\attendancemastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B2568F-E892-47A5-8D40-5ECF6E0864B0}|CloudHRMS\\CloudHRMS.csproj|solutionrelative:cloudhrms\\controllers\\attendancemastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AttendanceMasterCalculatedData.cs",
+              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Models\\DataModels\\AttendanceMasterCalculatedData.cs",
+              "RelativeDocumentMoniker": "CloudHRMS\\Models\\DataModels\\AttendanceMasterCalculatedData.cs",
+              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Models\\DataModels\\AttendanceMasterCalculatedData.cs",
+              "RelativeToolTip": "CloudHRMS\\Models\\DataModels\\AttendanceMasterCalculatedData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:11:22.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AttendanceMasterController.cs",
+              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Controllers\\AttendanceMasterController.cs",
+              "RelativeDocumentMoniker": "CloudHRMS\\Controllers\\AttendanceMasterController.cs",
+              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Controllers\\AttendanceMasterController.cs",
+              "RelativeToolTip": "CloudHRMS\\Controllers\\AttendanceMasterController.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEIAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T08:55:09.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PayrollProcessViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Models\\ViewModels\\PayrollProcessViewModel.cs",
+              "RelativeDocumentMoniker": "CloudHRMS\\Models\\ViewModels\\PayrollProcessViewModel.cs",
+              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Models\\ViewModels\\PayrollProcessViewModel.cs",
+              "RelativeToolTip": "CloudHRMS\\Models\\ViewModels\\PayrollProcessViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T08:53:57.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PayrollController.cs",
+              "DocumentMoniker": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Controllers\\PayrollController.cs",
+              "RelativeDocumentMoniker": "CloudHRMS\\Controllers\\PayrollController.cs",
+              "ToolTip": "C:\\Users\\Saw Yu Nandar\\Documents\\ai\\aspnetcorebatch13\\CloudHRMS\\Controllers\\PayrollController.cs",
+              "RelativeToolTip": "CloudHRMS\\Controllers\\PayrollController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T08:51:53.113Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -38,8 +38,24 @@ namespace CloudHRMS.Controllers
                                                                                                                             ShiftInfo=s.Name,
                                                                                                                             EmployeeInfo=e.Code+"/"+e.Name,
                                                                                                                             DepartmentInfo=d.Code+"/"+d.Name,
-                                                                                                                         }).ToList();
-            return View(attendanceMasters);
+                                                                                                                            IsEarlyOut=attm.IsEarlyOut,
+                                                                                                                            IsLate=attm.IsLate,
+                                                                                                                            IsLeave=attm.IsLeave
+                                                                                                                         }).OrderBy(o=>o.AttendanceDate).ToList();
+            var data = attendanceMasters.DistinctBy(o => o.AttendanceDate).Select(s=>new AttendanceMasterViewModel
+            {
+                Id = s.Id,
+                AttendanceDate = s.AttendanceDate,
+                InTime = s.InTime,
+                OutTime = s.OutTime,
+                ShiftInfo = s.ShiftInfo,
+                EmployeeInfo = s.EmployeeInfo,
+                DepartmentInfo =s.DepartmentInfo,
+                IsEarlyOut = s.IsEarlyOut,
+                IsLate = s.IsLate,
+                IsLeave = s.IsLeave
+            }).ToList();
+            return View(data);
         }
         public IActionResult DayEndProcess()
         {
@@ -59,7 +75,7 @@ namespace CloudHRMS.Controllers
                                                                                                     join sa in _applicationDbContext.ShiftAssigns
                                                                                                     on d.EmployeeId equals sa.EmployeeId
                                                                                                     where sa.EmployeeId == ui.EmployeeId &&
-                                                                                                       (ui.AttendanceDate >= sa.FromDate && sa.FromDate <= ui.ToDate)
+                                                                                                       (ui.AttendanceDate >= sa.FromDate && sa.ToDate <= ui.ToDate) && (d.AttendanceDate>=ui.AttendanceDate   && d.AttendanceDate <= ui.ToDate)
                                                                                                     select new
                                                                                                     {
                                                                                                         dailyAttendance=d,

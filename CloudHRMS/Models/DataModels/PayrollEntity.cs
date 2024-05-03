@@ -16,5 +16,7 @@ namespace CloudHRMS.Models.DataModels
         public decimal NetPay { get; set; }
         public decimal Allowance { get; set; }
         public decimal Deduction { get; set; }
+        public decimal AttendanceDays { get; set; }
+        public decimal AttendanceDeduction { get; set; }
     }
 }

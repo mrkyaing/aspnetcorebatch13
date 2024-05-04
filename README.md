@@ -17,6 +17,11 @@
 
 # Interview for Work
 
+# Database Design url
+- https://docs.google.com/spreadsheets/d/1pv3IBIM7SlmtkHr_8huHTX2CiQJcsveraXFjC8bj1v8/edit#gid=0
+# Database script url
+- https://github.com/mrkyaing/aspnetcorebatch13/blob/main/CloudHRMS/DatabaseScripts/cloudhrms.sql
+
 
 
 

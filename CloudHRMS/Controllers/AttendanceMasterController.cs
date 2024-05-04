@@ -120,11 +120,11 @@ namespace CloudHRMS.Controllers
                 }
                 _applicationDbContext.AttendanceMasters.AddRange(attendanceMasters);//save the recrod to the Db Set <attendance Master> 
                 _applicationDbContext.SaveChanges();//saving the data to the database 
-                ViewBag.Info = "successfully save a record to the system";
+                TempData["Info"] = "successfully save a record to the system";
             }
             catch (Exception ex)
             {
-                ViewBag.Info = "Error occur when  saving a record  to the system";
+                TempData["Info"] = "Error occur when  saving a record  to the system";
             }
             return RedirectToAction("list");
         }

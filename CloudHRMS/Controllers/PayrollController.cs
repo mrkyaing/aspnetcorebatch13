@@ -21,8 +21,28 @@ namespace CloudHRMS.Controllers
         {
             //mapper.map<source,destination>(dataList);
             //_mapper.Map<List<PayrollEntity>,List<PayrollViewModel>>(_applicationDbContext.Payrolls.ToList())
-          //  List < PayrollViewModel > payrollViews=()
-            return View(_mapper.Map<List<PayrollEntity>, List<PayrollViewModel>>(_applicationDbContext.Payrolls.ToList()));
+            List<PayrollViewModel> payrollViews = (from p in _applicationDbContext.Payrolls
+                                                                                   join e in _applicationDbContext.Employees
+                                                                                   on p.EmployeeId equals e.Id
+                                                                                   join d in _applicationDbContext.Departments
+                                                                                   on e.DepartmentId equals d.Id
+                                                                                   select new PayrollViewModel
+                                                                                   {
+                                                                                       Id=p.Id,
+                                                                                       FromDate=p.FromDate,
+                                                                                       ToDate=p.ToDate,
+                                                                                       EmployeeInfo=e.Code+"/" + e.Name,
+                                                                                       BasicSalary=e.BasicSalary,
+                                                                                       DepartmentInfo =d.Code+"/" + d.Name,
+                                                                                       GrossPay=p.GrossPay,
+                                                                                       NetPay=p.NetPay,
+                                                                                       AttendanceDays=p.AttendanceDays,
+                                                                                       AttendanceDeduction=p.AttendanceDeduction,
+                                                                                       Allowance=p.Allowance,
+                                                                                       Deduction=p.Deduction,
+                                                                                       IncomeTax=p.IncomeTax,                                          
+                                                                                   }).ToList();
+            return View(payrollViews);
         }
         public IActionResult PayrollProcess()
         {
@@ -58,12 +78,12 @@ namespace CloudHRMS.Controllers
                     List<PayrollEntity> payrolls = CalculatePayroll(attendanceMasterCalculatedData);
                     _applicationDbContext.Payrolls.AddRange(payrolls);
                     _applicationDbContext.SaveChanges();
-                    ViewBag.Info = "successfully save a record to the system";
+                    TempData["Info"] = "successfully save a record to the system";
                 }
             }
             catch (Exception ex)
             {
-                ViewBag.Info = "Error occur when  saving a record  to the system";
+                TempData["Info"] = "Error occur when  saving a record  to the system";
             }
             return RedirectToAction("list");
         }
@@ -123,6 +143,17 @@ namespace CloudHRMS.Controllers
                 }
             }
             return attendanceDeduction;
+        }
+    
+        public IActionResult PayrollDetailReport()
+        {
+            ViewBag.Employees = _mapper.Map<List<EmployeeEntity>, List<EmployeeViewModel>>(_applicationDbContext.Employees.ToList());
+            ViewBag.Departments = _mapper.Map<List<DepartmentEntity>, List<DepartmentViewModel>>(_applicationDbContext.Departments.ToList());
+            return View();
+        }
+        public IActionResult PayrollDetailReportByPayrollMonth(DateTime fromDate,DateTime toDate,string employeeId,string departmentId)
+        {
+            return View();
         }
     }
 }

@@ -106,11 +106,11 @@ namespace CloudHRMS.Controllers
                 };
                 _applicationDbContext.DailyAttendances.Add(dailyAttendance);
                 _applicationDbContext.SaveChanges();
-                ViewBag.Info = "successfully save a record to the system";
+                TempData["Info"] = "successfully save a record to the system";
             }
             catch (Exception ex)
             {
-                ViewBag.Info = "Error occur when  saving a record  to the system";
+                TempData["Info"] = "Error occur when  saving a record  to the system";
             }
             return RedirectToAction("list");
         }

@@ -12,5 +12,10 @@
         public decimal NetPay { get; set; }
         public decimal Allowance { get; set; }
         public decimal Deduction { get; set; }
+        public string EmployeeInfo { get; set; }
+        public decimal BasicSalary { get; set; }
+        public string DepartmentInfo { get; set; }
+        public decimal AttendanceDays { get; set; }
+        public decimal AttendanceDeduction { get; set; }
     }
 }

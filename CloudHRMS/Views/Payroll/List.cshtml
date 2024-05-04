@@ -12,12 +12,16 @@
             <th scope="col">#</th>
             <td scope="col">FromDate</td>
             <td scope="col">ToDate</td>
-            <td scope="col">EmployeeId</td>
-            <td scope="col">DepartmentId</td>
+            <td scope="col">Employee</td>
+            <td scope="col">Department</td>
+            <td scope="col">Basic Salary</td>
             <td scope="col">IncomeTax</td>
             <td scope="col">GrossPay</td>
             <td scope="col">Allowance</td>
             <td scope="col">Deduction</td>
+            <td scope="col">Attendance Deduction</td>
+            <td scope="col">Net Pay</td>
+            <td scope="col">Attendance Days</td>
             @if (User.IsInRole("HR"))
             {
                 <th scope="col">Actions</th>
@@ -32,14 +36,18 @@
         {
             <tr>
                 <th scope="row">@index</th>
-                <td>@item.FromDate</td>
-                <td>@item.ToDate</td>
-                <td>@item.EmployeeId</td>
-                <td>@item.DepartmentId</td>
+                <td>@item.FromDate.ToString("dd-MM-yyyy")</td>
+                <td>@item.ToDate.ToString("dd-MM-yyyy")</td>
+                <td>@item.EmployeeInfo</td>
+                <td>@item.DepartmentInfo</td>
+                <td>@item.BasicSalary</td>
                 <td>@item.IncomeTax</td>
                 <td>@item.GrossPay</td>
                 <td>@item.Allowance</td>
                 <td>@item.Deduction</td>
+                <td>@item.AttendanceDeduction</td>
+                <td>@item.NetPay</td>
+                <td>@item.AttendanceDays</td>
                 @if (User.IsInRole("HR"))
                 {
                     <td>

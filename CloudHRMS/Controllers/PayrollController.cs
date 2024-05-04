@@ -103,9 +103,9 @@ namespace CloudHRMS.Controllers
                 payroll.EmployeeId=calculatedData.EmployeeId;
                 payroll.DepartmentId=calculatedData.DepartmentId;
                 payroll.IncomeTax=incomeTax;
-                decimal PayPerDay = (calculatedData.BasicPay / workingDays);
+                decimal PayPerDay = (calculatedData.BasicPay / workingDays);//500000/30 >> 16,666.66666666667
                 payroll.AttendanceDeduction = CalculateAttendanceDeductionByAttendancePolicy(calculatedData.FromDate, calculatedData.ToDate, calculatedData.EmployeeId, PayPerDay, calculatedData.LateCount, calculatedData.EarlyOutCount);
-                payroll.GrossPay=((calculatedData.BasicPay/workingDays)*calculatedData.AttendanceDays)+allowance- payroll.AttendanceDeduction - deduction;
+                payroll.GrossPay=((PayPerDay) *calculatedData.AttendanceDays)+allowance- payroll.AttendanceDeduction - deduction;
                 payroll.NetPay = payroll.GrossPay - payroll.IncomeTax;
                 payroll.Allowance=allowance;
                 payroll.Deduction=deduction;
@@ -121,8 +121,6 @@ namespace CloudHRMS.Controllers
             var attendancePolicy = (from attm in _applicationDbContext.AttendanceMasters
                                                         join e in _applicationDbContext.Employees
                                                         on attm.EmployeeId equals e.Id
-                                                        join d in _applicationDbContext.Departments
-                                                        on e.DepartmentId equals d.Id
                                                         join sa in _applicationDbContext.ShiftAssigns
                                                         on e.Id equals sa.EmployeeId
                                                         join s in _applicationDbContext.Shifts

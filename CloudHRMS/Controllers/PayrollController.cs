@@ -2,6 +2,8 @@
 using CloudHRMS.DAO;
 using CloudHRMS.Models.DataModels;
 using CloudHRMS.Models.ViewModels;
+using CloudHRMS.Reports;
+using CloudHRMS.Utilities;
 using Microsoft.AspNetCore.Mvc;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -151,7 +153,38 @@ namespace CloudHRMS.Controllers
         }
         public IActionResult PayrollDetailReportByPayrollMonth(DateTime fromDate,DateTime toDate,string employeeId,string departmentId)
         {
-            return View();
+            List<PayrollDetail> payrollDetails = (from p in _applicationDbContext.Payrolls
+                                                   join e in _applicationDbContext.Employees
+                                                   on p.EmployeeId equals e.Id
+                                                   join d in _applicationDbContext.Departments
+                                                   on e.DepartmentId equals d.Id
+                                                   where (e.Id==employeeId && (p.FromDate>=fromDate && p.ToDate<=toDate) || (d.Id == departmentId && (p.FromDate >= fromDate && p.ToDate <= toDate)))
+                                                   select new PayrollDetail
+                                                   {
+                                                       FromDate = p.FromDate.ToString("dd-MM-yyyy"),
+                                                       ToDate = p.ToDate.ToString("dd-MM-yyyy"),
+                                                       EmployeeInfo = e.Code + "/" + e.Name,
+                                                       BasicSalary = e.BasicSalary,
+                                                       DepartmentInfo = d.Code + "/" + d.Name,
+                                                       GrossPay = p.GrossPay,
+                                                       NetPay = p.NetPay,
+                                                       AttendanceDays = p.AttendanceDays,
+                                                       AttendanceDeduction = p.AttendanceDeduction,
+                                                       Allowance = p.Allowance,
+                                                       Deduction = p.Deduction,
+                                                       IncomeTax = p.IncomeTax,
+                                                   }).ToList();
+            if (payrollDetails.Any())
+            {
+                string reportname = $"PayrollDetails_{Guid.NewGuid():N}.xlsx";
+                var exportData = FilesIOHelper.ExporttoExcel<PayrollDetail>(payrollDetails, "PayrollDetailReport");
+                return File(exportData, "application/vnd.openxmlformats-officedocument.spreedsheetml.sheet", reportname);
+            }
+            else
+            {
+                TempData["info"] = "There is no data when report to excel";
+                return RedirectToAction("PayrollDetailReport");
+            }
         }
     }
 }

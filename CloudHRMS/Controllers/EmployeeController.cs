@@ -95,22 +95,22 @@ namespace CloudHRMS.Controllers
                                                                                          on e.DepartmentId equals d.Id
                                                                                          join p in _applicationDbContext.Positions
                                                                                          on e.PositionId equals p.Id 
-            select new EmployeeViewModel
-            {
-                Id = e.Id,
-                Name = e.Name,
-                Email = e.Email,
-                DOB = e.DOB,
-                BasicSalary = e.BasicSalary,
-                Address = e.Address,
-                Gender = e.Gender,
-                Phone = e.Phone,
-                Code = e.Code,
-                DOE = e.DOE,
-                DepartmentInfo=d.Code +"/"+ d.Name,
-                PositionInfo=p.Code +"/"+p.Name,
-                ProfilePicture=e.ProfilePicture??""
-            }).ToList();
+                                                                                        select new EmployeeViewModel
+                                                                                        {
+                                                                                            Id = e.Id,
+                                                                                            Name = e.Name,
+                                                                                            Email = e.Email,
+                                                                                            DOB = e.DOB,
+                                                                                            BasicSalary = e.BasicSalary,
+                                                                                            Address = e.Address,
+                                                                                            Gender = e.Gender,
+                                                                                            Phone = e.Phone,
+                                                                                            Code = e.Code,
+                                                                                            DOE = e.DOE,
+                                                                                            DepartmentInfo=d.Code +"/"+ d.Name,
+                                                                                            PositionInfo=p.Code +"/"+p.Name,
+                                                                                            ProfilePicture=e.ProfilePicture??""
+                                                                                        }).ToList();
             return View(_employeeService.GetAll());
         }
         public IActionResult Delete(string id)
@@ -134,34 +134,33 @@ namespace CloudHRMS.Controllers
        public IActionResult Edit(string id)
         {                   
             EmployeeViewModel employee = _applicationDbContext.Employees.Where(x => x.Id == id).Select(s =>
-            new EmployeeViewModel
-            {
-                Id = s.Id,
-                Name = s.Name,
-                Email = s.Email,
-                DOB = s.DOB,
-                BasicSalary = s.BasicSalary,
-                Address = s.Address,
-                Gender = s.Gender,
-                Phone = s.Phone,
-                Code = s.Code,
-                DOE = s.DOE,
-                DepartmentId=s.DepartmentId,
-                PositionId=s.PositionId
-            }).SingleOrDefault();
+                                                                                                                                                            new EmployeeViewModel
+                                                                                                                                                            {
+                                                                                                                                                                Id = s.Id,
+                                                                                                                                                                Name = s.Name,
+                                                                                                                                                                Email = s.Email,
+                                                                                                                                                                DOB = s.DOB,
+                                                                                                                                                                BasicSalary = s.BasicSalary,
+                                                                                                                                                                Address = s.Address,
+                                                                                                                                                                Gender = s.Gender,
+                                                                                                                                                                Phone = s.Phone,
+                                                                                                                                                                Code = s.Code,
+                                                                                                                                                                DOE = s.DOE,
+                                                                                                                                                                DepartmentId=s.DepartmentId,
+                                                                                                                                                                PositionId=s.PositionId
+                                                                                                                                                            }).SingleOrDefault();
            //for binding the department select box
             var departments = _applicationDbContext.Departments.Select(s => new DepartmentViewModel
-            {
-                Id = s.Id,
-                Code = s.Code
-            }).OrderBy(o => o.Code).ToList();
+                                                                                                                                            {
+                                                                                                                                                Id = s.Id,
+                                                                                                                                                Code = s.Code
+                                                                                                                                            }).OrderBy(o => o.Code).ToList();
             ViewBag.Departments = departments;
             //for binding the position select box
-            var positions = _applicationDbContext.Positions.Select(s => new PositionViewModel
-            {
-                Id = s.Id,
-                Code = s.Code
-            }).OrderBy(o => o.Code).ToList();
+            var positions = _applicationDbContext.Positions.Select(s => new PositionViewModel{
+                                                                                                                            Id = s.Id,
+                                                                                                                            Code = s.Code
+                                                                                                                        }).OrderBy(o => o.Code).ToList();
             ViewBag.Positions = positions;
             return View(employee);
         }

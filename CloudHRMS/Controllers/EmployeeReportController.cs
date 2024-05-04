@@ -19,10 +19,10 @@ namespace CloudHRMS.Controllers
 
         public IActionResult ReportByEmployeeFromCodeToCode(string fromCode,string toCode)
         {
-            string reportname = $"EmployeeDetails_{Guid.NewGuid():N}.xlsx";
             IList<EmployeeDetailReportViewModel> employees= _employeeReport.EmployeeDetailReport(fromCode, toCode);
             if (employees.Any())
             {
+                string reportname = $"EmployeeDetails_{Guid.NewGuid():N}.xlsx";
                 var exportData = FilesIOHelper.ExporttoExcel<EmployeeDetailReportViewModel>(employees, "employeeDetailReport");
                 return File(exportData, "application/vnd.openxmlformats-officedocument.spreedsheetml.sheet", reportname);
             }
